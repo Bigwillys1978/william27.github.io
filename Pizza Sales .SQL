@@ -1,4 +1,4 @@
-**PROBLEM STATEMENT**
+PROBLEM STATEMENT
 KPI STATEMENT
 We need to analyse key indicators for the pizza sales to gain insights into the business performance. Specifically, we want to calculate the ff. metrics:
 1.	Total Revenue: The sum of the total price of all pizza orders.
