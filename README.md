@@ -52,3 +52,20 @@ This allows users to dynamically filter and explore sales performance
 
 ![Salesperformance](Salesperformance.jpg)
 
+# Project 2
+
+**Title** Pizza Sales Report
+
+**SQL Codes:** [Pizza Database-SQL Codes](https://github.com/Bigwillys1978/william27.github.io/blob/main/Pizza%20Sales%20.SQL)
+
+**SQL Skills Used:**
+
+**Project Description:**
+
+**Technology Used:** SQL Server
+
+
+
+
+
+
