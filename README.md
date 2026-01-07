@@ -49,5 +49,6 @@ Slicers were used for:
 Countries.
 Months.
 This allows users to dynamically filter and explore sales performance
+
 ![Salesperformance](Salesperformance.jpg)
 
