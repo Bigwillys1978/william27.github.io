@@ -194,7 +194,7 @@ The objective of this project is to:
 
 **Technology Used:** SQL Server, SQL Server Management Studio (SSMS)
 
-![Pizzaprojecthome.jpg](Bestandworstsellers.jpg)
+![Pizzaprojecthome.jpg](Pizzaprojecthome.jpg)
 
 
 
