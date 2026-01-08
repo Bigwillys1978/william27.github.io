@@ -192,8 +192,11 @@ The objective of this project is to:
 
 **Average pizza per order:** The average number of pizzas sold per order, calculated by dividing the total number of pizza sold by total number of orders
 
-
 **Technology Used:** SQL Server, SQL Server Management Studio (SSMS)
+
+![Pizzaprojecthome.jpg](Bestandworstsellers.jpg)
+
+![Bestandworstsellers.jpg](Bestandworstsellers.jpg)
 
 
 
