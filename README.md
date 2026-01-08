@@ -66,42 +66,45 @@ SELECT SUM(total_price) AS Total_Revenue FROM pizza_sales
 
 SELECT (SUM(total_price) / COUNT(DISTINCT order_id)) AS Avg_order_Value FROM pizza_sales
 
-3. Total pizza sold: The sum of the quantities of all pizza sold.
+**Total pizza sold:** The sum of the quantities of all pizza sold.
 
    SELECT SUM(quantity) AS Total_pizza_sold FROM pizza_sales
 
-4. Total orders: Total number of orders placed
+**Total orders:** Total number of orders placed
 
    SELECT COUNT(DISTINCT order_id) AS Total_Orders FROM pizza_sales
 
-5. Average pizza per order: The average number of pizzas sold per order, calculated by dividing the total number of pizza sold by total number of orders
+**Average pizza per order:** The average number of pizzas sold per order, calculated by dividing the total number of pizza sold by total number of orders
 
 SELECT CAST(CAST(SUM(quantity) AS DECIMAL(10,2)) / 
 CAST(COUNT(DISTINCT order_id) AS DECIMAL(10,2)) AS DECIMAL(10,2))
 AS Avg_Pizzas_per_order
 FROM pizza_sales
-CHARTS REQUIREMENT  
+
+**CHARTS REQUIREMENT**  
+
 We would like to visualize various aspects of our pizza sales data to gain insights and understand key trends. We have identified the following requirement for creating charts.
-1.	Daily trend for total orders: Create a bar chart that displays the daily trends of total orders over a specific period. This charts will help us identify any patterns or fluctuations in order volumes daily.
+
+**Daily trend for total orders:** Create a bar chart that displays the daily trends of total orders over a specific period. This charts will help us identify any patterns or fluctuations in order volumes daily.
 
 SELECT DATENAME(DW, order_date) AS order_day, COUNT(DISTINCT order_id) AS total_orders 
 FROM pizza_sales
 GROUP BY DATENAME(DW, order_date)
 Output:
 
-2.	Monthly trend for total orders: Create a line chart that illustrates the hourly trend of total orders throughout the day. This chart will allow us to identify peak hours or periods of high order activity.
+**Monthly trend for total orders:** Create a line chart that illustrates the hourly trend of total orders throughout the day. This chart will allow us to identify peak hours or periods of high order activity.
 
 select DATENAME(MONTH, order_date) as Month_Name, COUNT(DISTINCT order_id) as Total_Orders
 from pizza_sales
 GROUP BY DATENAME(MONTH, order_date)
 
-3.	Percentage of sales by pizza category: create a pie chart that shows the distribution of sales across different pizza categories. This chart will provide insight into the popularity of various pizza categories and their distribution to overall sales.
+**Percentage of sales by pizza category:** create a pie chart that shows the distribution of sales across different pizza categories. This chart will provide insight into the popularity of various pizza categories and their distribution to overall sales.
 SELECT pizza_category, CAST(SUM(total_price) AS DECIMAL(10,2)) as total_revenue,
 CAST(SUM(total_price) * 100 / (SELECT SUM(total_price) from pizza_sales) AS DECIMAL(10,2)) AS PCT
 FROM pizza_sales
 GROUP BY pizza_category
 
-4.	 Percentage of sales by pizza size: Generate a pie chart that represents the percentage of sales attributed to different sizes. This chart will help us understand customer preferences for pizza sizes and their impact on sales.
+**Percentage of sales by pizza size:** Generate a pie chart that represents the percentage of sales attributed to different sizes. This chart will help us understand customer preferences for pizza sizes and their impact on sales.
 
 SELECT pizza_size, CAST(SUM(total_price) AS DECIMAL(10,2)) as total_revenue,
 CAST(SUM(total_price) * 100 / (SELECT SUM(total_price) from pizza_sales) AS DECIMAL(10,2)) AS PCT
@@ -109,7 +112,7 @@ FROM pizza_sales
 GROUP BY pizza_size
 ORDER BY pizza_size
 
-5.	Total pizza sold by pizza category: Create a funnel chart that represents the total number of pizza's sold for each pizza category. This chart will allow us to compare the sales performance of different pizza categories.
+**Total pizza sold by pizza category:** Create a funnel chart that represents the total number of pizza's sold for each pizza category. This chart will allow us to compare the sales performance of different pizza categories.
 
 SELECT pizza_category, SUM(quantity) as Total_Quantity_Sold
 FROM pizza_sales
@@ -117,50 +120,56 @@ WHERE MONTH(order_date) = 2
 GROUP BY pizza_category
 ORDER BY Total_Quantity_Sold DESC
 
-6.	Top five best sellers by revenue, total quantity and total orders: Creates a bar chart highlighting the top five best-selling pizza based on the revenue, total quantity, total orders. This chart will help us identify the most popular pizza options.
+**Top five best sellers by revenue, total quantity and total orders:** Creates a bar chart highlighting the top five best-selling pizza based on the revenue, total quantity, total orders. This chart will help us identify the most popular pizza options.
 
+**Top 5 Pizzas by Revenue**
 SELECT Top 5 pizza_name, SUM(total_price) AS Total_Revenue
 FROM pizza_sales
 GROUP BY pizza_name
 ORDER BY Total_Revenue DESC
 
-Top 5 Pizzas by Quantity
+**Top 5 Pizzas by Quantity**
 SELECT Top 5 pizza_name, SUM(quantity) AS Total_Pizza_Sold
 FROM pizza_sales
 GROUP BY pizza_name
 ORDER BY Total_Pizza_Sold DESC
 
-Top 5 Pizzas by Total Orders
+**Top 5 Pizzas by Total Orders**
 SELECT Top 5 pizza_name, COUNT(DISTINCT order_id) AS Total_Orders
 FROM pizza_sales
 GROUP BY pizza_name
 ORDER BY Total_Orders DESC
  
-7.	Bottom 5 best sellers by revenue total quantity and total orders: Create a bar chart showcasing the bottom 5 worst- selling pizza based on the revenue, total quantity, total orders. This chart will enable us to identify underperforming or less
+**Bottom 5 best sellers by revenue total quantity and total orders:** Create a bar chart showcasing the bottom 5 worst- selling pizza based on the revenue, total quantity, total orders. This chart will enable us to identify underperforming or less
 
-Bottom 5 Pizzas by Revenue
+**Bottom 5 Pizzas by Revenue**
 SELECT Top 5 pizza_name, SUM(total_price) AS Total_Revenue
 FROM pizza_sales
 GROUP BY pizza_name
 ORDER BY Total_Revenue ASC
  
-Bottom 5 Pizzas by Quantity
+**Bottom 5 Pizzas by Quantity**
 SELECT TOP 5 pizza_name, SUM(quantity) AS Total_Pizza_Sold
 FROM pizza_sales
 GROUP BY pizza_name
 ORDER BY Total_Pizza_Sold ASC
 Output
 
-Bottom 5 Pizzas by Total Orders
+**Bottom 5 Pizzas by Total Orders**
 SELECT Top 5 pizza_name, COUNT(DISTINCT order_id) AS Total_Orders
 FROM pizza_sales
 GROUP BY pizza_name
 ORDER BY Total_Orders ASC
 
 **SQL Skills Used:** 
-SELECT, WHERE
 
-Aggregate functions (SUM, COUNT, AVG)
+**Data Retrieval (SELECT):** Queried and extracted specific information from the database.
+
+**Data Aggregation (SUM, COUNT, AVG):** Calculated totals, such as sales and quantities, and counted records to analyze data trends.Aggregate functions.
+
+**Data Filtering (WHERE, BETWEEN, IN, AND):** Applied filters to select relevant data, including filtering by ranges and lists.
+
+**Data Source Specification (FROM):** Specified the tables used as data sources for retrieval
 
 GROUP BY, ORDER BY
 
@@ -170,17 +179,18 @@ Time-based analysis
 
 Aliasing
 
-Sorting and ranking
-
-Filtering with conditions
-
 **Project Description:** This project analyses pizza sales transaction data to understand customer purchasing behaviour, revenue performance, and product popularity. The dataset contains detailed order-level information including pizza types, categories, sizes, quantities sold, prices, and order timestamps.
 The objective of this project is to:
-1.	Total Revenue: The sum of the total price of all pizza orders.
-2.	Average order value: The average amount spent per order, calculated by dividing the total revenue by the total number of orders.
-3.	Total pizza sold: The sum of the quantities of all pizza sold.
-4.	Total orders: Total number of orders placed
-5.	Average pizza per order: The average number of pizzas sold per order, calculated by dividing the total number of pizza sold by total number of orders
+
+**Total Revenue:** The sum of the total price of all pizza orders.
+
+**Average order value:** The average amount spent per order, calculated by dividing the total revenue by the total number of orders.
+
+**Total pizza sold:** The sum of the quantities of all pizza sold.
+
+**Total orders:** Total number of orders placed
+
+**Average pizza per order:** The average number of pizzas sold per order, calculated by dividing the total number of pizza sold by total number of orders
 
 
 **Technology Used:** SQL Server, SQL Server Management Studio (SSMS)
