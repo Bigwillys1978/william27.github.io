@@ -57,13 +57,15 @@ This allows users to dynamically filter and explore sales performance
 **Title** Pizza Sales Report
 
 **SQL Codes:** [Pizza Database-SQL Codes](https://github.com/Bigwillys1978/william27.github.io/blob/main/Pizza%20Sales%20.SQL)
-1.	Total Revenue: The sum of the total price of all pizza orders.
+**Total Revenue:** 
+The sum of the total price of all pizza orders.
 
-  	 SELECT SUM(total_price) AS Total_Revenue FROM pizza_sales
+SELECT SUM(total_price) AS Total_Revenue FROM pizza_sales
 
-2. Average order value: The average amount spent per order, calculated by dividing the total revenue by the total number of orders.
+**Average order value:** 
+The average amount spent per order, calculated by dividing the total revenue by the total number of orders.
 
-  SELECT (SUM(total_price) / COUNT(DISTINCT order_id)) AS Avg_order_Value FROM pizza_sales
+SELECT (SUM(total_price) / COUNT(DISTINCT order_id)) AS Avg_order_Value FROM pizza_sales
 
 3. Total pizza sold: The sum of the quantities of all pizza sold.
 
