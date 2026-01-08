@@ -196,7 +196,7 @@ The objective of this project is to:
 
 ![Pizzaprojecthome.jpg](Bestandworstsellers.jpg)
 
-![Bestandworstsellers.jpg](Bestandworstsellers.jpg)
+
 
 
 
