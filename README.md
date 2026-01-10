@@ -1,4 +1,4 @@
-# Project 1
+# PROJECT 1
 
 **Title:** [Sales Performance Analysis](https://github.com/Bigwillys1978/william27.github.io/blob/main/Sales%20Performance%20Data.xlsx)
 
@@ -52,9 +52,9 @@ This allows users to dynamically filter and explore sales performance
 
 ![Salesperformance](Salesperformance.jpg)
 
-# Project 2
+# PROJECT 2
 
-**Title**: PIZZA SALES REPORT
+**Title:** PIZZA SALES REPORT
 
 **SQL Codes:** [Pizza Database-SQL Codes](https://github.com/Bigwillys1978/william27.github.io/blob/main/Pizza%20Sales%20.SQL)
 
@@ -81,7 +81,7 @@ CAST(COUNT(DISTINCT order_id) AS DECIMAL(10,2)) AS DECIMAL(10,2))
 AS Avg_Pizzas_per_order
 FROM pizza_sales
 
-**CHARTS REQUIREMENT**  
+**CHARTS REQUIREMENT:**
 
 We would like to visualize various aspects of our pizza sales data to gain insights and understand key trends. We have identified the following requirement for creating charts.
 
@@ -122,19 +122,19 @@ ORDER BY Total_Quantity_Sold DESC
 
 **Top five best sellers by revenue, total quantity and total orders:** Creates a bar chart highlighting the top five best-selling pizza based on the revenue, total quantity, total orders. This chart will help us identify the most popular pizza options.
 
-**Top 5 Pizzas by Revenue**
+**Top 5 Pizzas by Revenue:**
 SELECT Top 5 pizza_name, SUM(total_price) AS Total_Revenue
 FROM pizza_sales
 GROUP BY pizza_name
 ORDER BY Total_Revenue DESC
 
-**Top 5 Pizzas by Quantity**
+**Top 5 Pizzas by Quantity:**
 SELECT Top 5 pizza_name, SUM(quantity) AS Total_Pizza_Sold
 FROM pizza_sales
 GROUP BY pizza_name
 ORDER BY Total_Pizza_Sold DESC
 
-**Top 5 Pizzas by Total Orders**
+**Top 5 Pizzas by Total Orders:**
 SELECT Top 5 pizza_name, COUNT(DISTINCT order_id) AS Total_Orders
 FROM pizza_sales
 GROUP BY pizza_name
@@ -142,20 +142,20 @@ ORDER BY Total_Orders DESC
  
 **Bottom 5 best sellers by revenue total quantity and total orders:** Create a bar chart showcasing the bottom 5 worst- selling pizza based on the revenue, total quantity, total orders. This chart will enable us to identify underperforming or less
 
-**Bottom 5 Pizzas by Revenue**
+**Bottom 5 Pizzas by Revenue:**
 SELECT Top 5 pizza_name, SUM(total_price) AS Total_Revenue
 FROM pizza_sales
 GROUP BY pizza_name
 ORDER BY Total_Revenue ASC
  
-**Bottom 5 Pizzas by Quantity**
+**Bottom 5 Pizzas by Quantity:**
 SELECT TOP 5 pizza_name, SUM(quantity) AS Total_Pizza_Sold
 FROM pizza_sales
 GROUP BY pizza_name
 ORDER BY Total_Pizza_Sold ASC
 Output
 
-**Bottom 5 Pizzas by Total Orders**
+**Bottom 5 Pizzas by Total Orders:**
 SELECT Top 5 pizza_name, COUNT(DISTINCT order_id) AS Total_Orders
 FROM pizza_sales
 GROUP BY pizza_name
@@ -196,15 +196,15 @@ The objective of this project is to:
 
 **PIZZA SALES REPORT – POWER BI DASHBOARD**
 
-**Technology and tools used**: Power BI Desktop, Data source: CSV / SQL Server, DAX (Data Analysis Expressions)
+**Technology and tools used:** Power BI Desktop, Data source: CSV / SQL Server, DAX (Data Analysis Expressions)
 
-**Data Visualisation & Reporting**: Power BI Desktop, Data modelling, Report and dashboard creation, Interactive visuals and slicers
+**Data Visualisation & Reporting:** Power BI Desktop, Data modelling, Report and dashboard creation, Interactive visuals and slicers
 
-**Data Transformation**: Power Query, Data cleaning, Column formatting, Date and time transformation, Removing duplicates and handling null values
+**Data Transformation:** Power Query, Data cleaning, Column formatting, Date and time transformation, Removing duplicates and handling null values
 
-**Calculations & Metrics**: DAX (Data Analysis Expressions), KPI measures (Total Revenue, Total Orders, Average Order Value), Time-based calculations, Ranking and Top N analysis
+**Calculations & Metrics:** DAX (Data Analysis Expressions), KPI measures (Total Revenue, Total Orders, Average Order Value), Time-based calculations, Ranking and Top N analysis
 
-**Project Description**
+**Project Description:**
 
 This Power BI project visualises pizza sales transaction data to provide actionable insights into revenue performance, customer demand, and product popularity. The dashboard enables stakeholders to monitor key sales metrics, identify top-performing pizzas, and analyse sales trends across time, category, and pizza size.
 
@@ -218,32 +218,33 @@ Demand forecasting
 
 Data-driven business decisions
 
-**Data Model**
+**Data Model:**
 
 Fact Table: pizza_sales
 
 **Key fields:** order_id, pizza_name, pizza_category, pizza_size, quantity, total_price, order_date, order_time
 
-**Key Measures (DAX)**
+**Key Measures (DAX):**
 
-**Total Revenue** Total Revenue = SUM(pizza_sales[total_price])
+**Total Revenue:** Total Revenue = SUM(pizza_sales[total_price])
 
-**Total Orders** Total Orders = DISTINCTCOUNT(pizza_sales[order_id])
+**Total Orders:** Total Orders = DISTINCTCOUNT(pizza_sales[order_id])
 
-**Total Pizzas Sold** Total Pizzas Sold = SUM(pizza_sales[quantity])
+**Total Pizzas Sold:** Total Pizzas Sold = SUM(pizza_sales[quantity])
 
-**Average Order Value** Average Order Value = DIVIDE([Total Revenue], [Total Orders])
+**Average Order Value:** Average Order Value = DIVIDE([Total Revenue], [Total Orders])
 
-**Average Pizza Price** Average Pizza Price = AVERAGE(pizza_sales[unit_price])
+**Average Pizza Price:** Average Pizza Price = AVERAGE(pizza_sales[unit_price])
 
-**Dashboard Overview**
+**Dashboard Overview:**
+
 **📊 KPI Cards:** Total Revenue, Total Orders, Total Pizzas Sold, Average Order Value
 
-**📈 Visuals Included** Daily Trend for total orders, Monthly trend for total orders, Percentage of sales by pizza category,Percentage of sales by pizza size, Total pizza sold by pizza category, Top 5 Pizzas by Revenue, Top 5 pizza by quantity, Top 5 pizza by orders.Bottom 5 pizza by revenue,bottom 5 pizza by quantity and bottom 5 pizza by orders.
+**📈 Visuals Included:** Daily Trend for total orders, Monthly trend for total orders, Percentage of sales by pizza category,Percentage of sales by pizza size, Total pizza sold by pizza category, Top 5 Pizzas by Revenue, Top 5 pizza by quantity, Top 5 pizza by orders.Bottom 5 pizza by revenue,bottom 5 pizza by quantity and bottom 5 pizza by orders.
 
-**Filters / Slicers** Pizza Category, Pizza Size, Date, Pizza Name.
+**Filters / Slicers:** Pizza Category, Pizza Size, Date, Pizza Name.
 
-**Key Insights**
+**Key Insights:**
 
 Orders were highest on weekends, Friday and Saturday evenings.
 
