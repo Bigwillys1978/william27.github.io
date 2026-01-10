@@ -54,7 +54,7 @@ This allows users to dynamically filter and explore sales performance
 
 # Project 2
 
-**Title** Pizza Sales Report
+**Title**: PIZZA SALES REPORT
 
 **SQL Codes:** [Pizza Database-SQL Codes](https://github.com/Bigwillys1978/william27.github.io/blob/main/Pizza%20Sales%20.SQL)
 
@@ -193,6 +193,69 @@ The objective of this project is to:
 **Average pizza per order:** The average number of pizzas sold per order, calculated by dividing the total number of pizza sold by total number of orders
 
 **Technology Used:** SQL Server, SQL Server Management Studio (SSMS)
+
+**PIZZA SALES REPORT – POWER BI DASHBOARD**
+
+**Technology and tools used**: Power BI Desktop, Data source: CSV / SQL Server, DAX (Data Analysis Expressions)
+
+**Data Visualisation & Reporting**: Power BI Desktop, Data modelling, Report and dashboard creation, Interactive visuals and slicers
+
+**Data Transformation**: Power Query, Data cleaning, Column formatting, Date and time transformation, Removing duplicates and handling null values
+
+**Calculations & Metrics**: DAX (Data Analysis Expressions), KPI measures (Total Revenue, Total Orders, Average Order Value), Time-based calculations, Ranking and Top N analysis
+
+**Project Description**
+
+This Power BI project visualises pizza sales transaction data to provide actionable insights into revenue performance, customer demand, and product popularity. The dashboard enables stakeholders to monitor key sales metrics, identify top-performing pizzas, and analyse sales trends across time, category, and pizza size.
+
+**The report is designed to support:**
+
+Sales performance monitoring
+
+Menu optimisation
+
+Demand forecasting
+
+Data-driven business decisions
+
+**Data Model**
+
+Fact Table: pizza_sales
+
+**Key fields:** order_id, pizza_name, pizza_category, pizza_size, quantity, total_price, order_date, order_time
+
+**Key Measures (DAX)**
+
+**Total Revenue** Total Revenue = SUM(pizza_sales[total_price])
+
+**Total Orders** Total Orders = DISTINCTCOUNT(pizza_sales[order_id])
+
+**Total Pizzas Sold** Total Pizzas Sold = SUM(pizza_sales[quantity])
+
+**Average Order Value** Average Order Value = DIVIDE([Total Revenue], [Total Orders])
+
+**Average Pizza Price** Average Pizza Price = AVERAGE(pizza_sales[unit_price])
+
+**Dashboard Overview**
+**📊 KPI Cards:** Total Revenue, Total Orders, Total Pizzas Sold, Average Order Value
+
+**📈 Visuals Included** Daily Trend for total orders, Monthly trend for total orders, Percentage of sales by pizza category,Percentage of sales by pizza size, Total pizza sold by pizza category, Top 5 Pizzas by Revenue, Top 5 pizza by quantity, Top 5 pizza by orders.Bottom 5 pizza by revenue,bottom 5 pizza by quantity and bottom 5 pizza by orders.
+
+**Filters / Slicers** Pizza Category, Pizza Size, Date, Pizza Name.
+
+**Key Insights**
+
+Orders were highest on weekends, Friday and Saturday evenings.
+
+There were maximum orders from the months of January and July
+
+The Thai chicken pizzas generated higher revenue per transaction.
+
+The Classic Dulexe categories dominated total sales, quantity and orders.
+
+Large size pizza contributed to maximum sales
+
+The Brie Curre pizza contributed to minimun total revenue, quantities and orders.
 
 ![Pizzaprojecthome.jpg](Pizzaprojecthome.jpg)
 
