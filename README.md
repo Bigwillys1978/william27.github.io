@@ -54,7 +54,8 @@ This allows users to dynamically filter and explore sales performance
 
 # PROJECT 2
 
-**Title:**
+**Title:** [UK Business sector interlligencereport(2020-2024)](
+
 Turnover Analysis, Incorporation Trends & Sector Insights
 
 **Tools Used:** Microsoft Excel, Pivot Tables, Data Visualization: Pivot Charts (Column chart, pie chart),Conditional Formatting,Basic data cleaning & sorting,slicers for interactivity,Time lines,Text-to-Columns for data cleaning,Advanced formulas (INDEX-MATCH, DATE functions)
@@ -120,7 +121,7 @@ Sample Company List with key metrics
 Status Overview (Active vs Inactive companies)
 Incorporation Date Analysis (histogram by month/year)
 
-![UKBusinessSectorInterlligence Report](UKBusinessSectorInterlligenceRepor.jpg)
+![UKBusinesssectorinterlligencereport](UKBusinesssectorinterlligencereport.jpg)
 
 
 # PROJECT 3
