@@ -88,7 +88,7 @@ Least Common Months: June & December
 Peak Incorporation: March (highest frequency)
 Pattern Consistency: Trend holds across most company types
 
-3. TURNOVER PATTERN:
+3.TURNOVER PATTERN:
 Post-COVID Recovery: Most sectors showed V-shaped recovery
 Sector Concentration: "Other" + "Retail" + "Manufacturing" 
 Smallest Sector: "Farming" 
@@ -98,7 +98,7 @@ Smallest Sector: "Farming"
 2022-2023 showed strongest recovery
 2024 indicates stabilization in most sectors
 
-DASHBOARD OVERVIEW:
+**Dashboard Overview**:
 Dashboard Components:
 1. Turnover Analysis Section
 Multi-Year Trend Charts (2020-2024) for all 10 sectors
