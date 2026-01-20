@@ -54,6 +54,77 @@ This allows users to dynamically filter and explore sales performance
 
 # PROJECT 2
 
+**Title:**
+Turnover Analysis, Incorporation Trends & Sector Insights
+
+**Tools Used:** Microsoft Excel, Pivot Tables, Data Visualization: Pivot Charts (Column chart, pie chart),Conditional Formatting,Basic data cleaning & sorting,slicers for interactivity,Time lines,Text-to-Columns for data cleaning,Advanced formulas (INDEX-MATCH, DATE functions)
+
+**Project Description:** 
+This project analyzes UK business performance across 10 sectors from 2020-2024 using turnover data and company incorporation records. The dashboard provides insights into sector growth trends, optimal timing for business incorporation, and comparative performance across industries.The analysis addresses four key business questions through interactive Excel features, delivering actionable insights for stakeholders, investors, and business strategists.
+
+**Purpose of the Analysis**
+
+Identify high-growth and declining sectors for investment decisions
+
+Understand seasonal patterns in business incorporations
+
+Track year-over-year performance trends
+
+Compare geographic distribution of business activities
+
+Provide data-driven recommendations for business planning
+
+**Key Findings**
+
+1.SECTOR PERFORMANCE (2020-2024):
+Fastest Growing: "Consultancy" sector 
+Largest Absolute Increase: "Other" category 
+Only Declining Sector: "Education" 
+Most Stable: "Maintenance & Repair" 
+
+2.INCORPORATION TRENDS:
+Least Common Months: June & December 
+Peak Incorporation: March (highest frequency)
+Pattern Consistency: Trend holds across most company types
+
+3. TURNOVER PATTERN:
+Post-COVID Recovery: Most sectors showed V-shaped recovery
+Sector Concentration: "Other" + "Retail" + "Manufacturing" 
+Smallest Sector: "Farming" 
+
+4.TIME-BASED INSIGHTS:
+2021 was challenging year (multiple sectors declined)
+2022-2023 showed strongest recovery
+2024 indicates stabilization in most sectors
+
+DASHBOARD OVERVIEW:
+Dashboard Components:
+1. Turnover Analysis Section
+Multi-Year Trend Charts (2020-2024) for all 10 sectors
+Growth Rate Comparison (bar chart)
+Top/Bottom Performers highlight (conditional formatting)
+Interactive Year Filter (slicer to view specific years)
+
+2. Incorporation Insights
+Monthly Incorporation Heatmap (colors indicate frequency)
+Least Common Months visualization (June & December highlighted)
+Breakdown by Company Type (sub-analysis per sector)
+
+3. Company Turnover Timeline
+Farming Sector Focus (detailed yearly breakdown)
+Comparative View (small vs large sector performance)
+Growth Trajectory Lines (showing progression patterns)
+
+4. Company Reference & Details
+Sample Company List with key metrics
+Status Overview (Active vs Inactive companies)
+Incorporation Date Analysis (histogram by month/year)
+
+![UKBusinessSectorInterlligence Report](UKBusinessSectorInterlligenceRepor.jpg)
+
+
+# PROJECT 3
+
 **Title:** PIZZA SALES REPORT
 
 **SQL Codes:** [Pizza Database-SQL Codes](https://github.com/Bigwillys1978/william27.github.io/blob/main/Pizza%20Sales%20.SQL)
