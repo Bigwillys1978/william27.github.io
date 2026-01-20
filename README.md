@@ -54,7 +54,7 @@ This allows users to dynamically filter and explore sales performance
 
 # PROJECT 2
 
-**Title:** [UK Business sector interlligencereport(2020-2024)](https://github.com/Bigwillys1978/william27.github.io/blob/main/UK%20BUSINESS%20SECTOR%20INTERLLIGENCE%20REPORT%20(2020-2024).xlsx)
+**Title:** [UK Business sector interlligence report(2020-2024)](https://github.com/Bigwillys1978/william27.github.io/blob/main/UK%20BUSINESS%20SECTOR%20INTERLLIGENCE%20REPORT%20(2020-2024).xlsx)
 
 Turnover Analysis, Incorporation Trends & Sector Insights
 
